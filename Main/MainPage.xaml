@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Main.MainPage">
+             x:Class="Main.MainPage"
+             BackgroundColor="Black">
 
     <ScrollView>
         <VerticalStackLayout
@@ -29,9 +30,11 @@
                 Text="Click me" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
+                BackgroundColor="AliceBlue"
                 HorizontalOptions="Fill" />
             <Button
                 x:Name="Counter2Btn"
+                BackgroundColor="AliceBlue"
                 Text="Click me to 2x" 
                 SemanticProperties.Hint="Multiplies the number of times you click by 2"
                 Clicked="Counter2Btn_Clicked"
@@ -39,6 +42,7 @@
             <Button
                 x:Name="Counter3Btn"
                 Text="Click me to 3x" 
+                BackgroundColor="AliceBlue"
                 SemanticProperties.Hint="Multiplies the number of times you click by 3"
                 Clicked="Counter3Btn_Clicked"
                 HorizontalOptions="Fill" />

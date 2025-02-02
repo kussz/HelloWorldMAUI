@@ -5,10 +5,11 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Main"
     Shell.FlyoutBehavior="Disabled"
-    Title="Main">
+    Title="Main"
+    >
 
     <ShellContent
-        Title="Home"
+        Title="Демонстрация"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

@@ -2,7 +2,7 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        int count = 1;
 
         public MainPage()
         {
@@ -30,6 +30,8 @@
 
         private void ShowCount()
         {
+            if (count >= 100000)
+                count = 1;
             if (count == 1)
                 CounterBtn.Text = $"Clicked {count} time";
             else
